@@ -1,4 +1,6 @@
-## Foundry
+# Foundry Template with OpenZeppelin
+
+> This template provides a basic setup for a Foundry project with OpenZeppelin 5.1.0 contracts integration.
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
