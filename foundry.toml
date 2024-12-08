@@ -2,5 +2,18 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+# 设置 RPC URL
+rpc_url = "http://127.0.0.1:8545"
+
+# fork_url = ""
+# 可选:设置特定区块高度
+# fork_block_number = 
+
+[rpc_endpoints]
+# testnet = ""
+# mainnet = ""
+
+[etherscan]
+# testnet = { key = "${API_KEY}", url = "" }
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
