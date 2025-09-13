@@ -15,6 +15,62 @@ Foundry consists of:
 
 https://book.getfoundry.sh/
 
+## Dependencies Management
+
+This project uses [Soldeer](https://github.com/mario-eth/soldeer) for dependency management, which is integrated into Forge.
+
+### Install Dependencies
+
+To install all dependencies listed in `foundry.toml`:
+
+```shell
+$ forge soldeer install
+```
+
+### Add New Dependencies
+
+To add a new dependency (e.g., OpenZeppelin contracts):
+
+```shell
+$ forge soldeer install @openzeppelin-contracts~5.4.0
+```
+
+To add Forge standard library:
+
+```shell
+$ forge soldeer install forge-std~1.9.3
+```
+
+### Update Dependencies
+
+To update a specific dependency:
+
+```shell
+$ forge soldeer update @openzeppelin-contracts
+```
+
+To update all dependencies:
+
+```shell
+$ forge soldeer update
+```
+
+### Remove Dependencies
+
+To remove a dependency:
+
+```shell
+$ forge soldeer uninstall @openzeppelin-contracts
+```
+
+### Current Dependencies
+
+This project includes:
+- `@openzeppelin-contracts` (5.4.0) - OpenZeppelin smart contract library
+- `forge-std` (1.9.3) - Foundry standard library for testing
+
+Dependencies are stored in the `dependencies/` directory and managed through `soldeer.lock`.
+
 ## Usage
 
 ### Build

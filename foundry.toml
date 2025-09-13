@@ -1,7 +1,7 @@
 [profile.default]
 src = "src"
 out = "out"
-libs = ["lib"]
+libs = ["dependencies"]
 # 设置 RPC URL
 rpc_url = "http://127.0.0.1:8545"
 
@@ -17,3 +17,7 @@ rpc_url = "http://127.0.0.1:8545"
 # testnet = { key = "${API_KEY}", url = "" }
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[dependencies]
+"@openzeppelin-contracts" = { version = "5.4.0" }
+forge-std = { version = "1.9.3" }
