@@ -1,6 +1,9 @@
 [profile.default]
 src = "src"
 out = "out"
+optimizer = true
+optimizer_runs = 200
+via_ir = true
 libs = ["dependencies"]
 # 设置 RPC URL
 rpc_url = "http://127.0.0.1:8545"
